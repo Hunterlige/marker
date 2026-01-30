@@ -46,7 +46,6 @@ from marker.schema.registry import register_block_class
 from marker.util import strings_to_classes
 from marker.processors.llm.llm_handwriting import LLMHandwritingProcessor
 from marker.processors.order import OrderProcessor
-from marker.services.gemini import GoogleGeminiService
 from marker.processors.line_merge import LineMergeProcessor
 from marker.processors.llm.llm_mathblock import LLMMathBlockProcessor
 from marker.processors.llm.llm_page_correction import LLMPageCorrectionProcessor
@@ -99,7 +98,7 @@ class PdfConverter(BaseConverter):
         BlankPageProcessor,
         DebugProcessor,
     )
-    default_llm_service: BaseService = GoogleGeminiService
+    default_llm_service: BaseService = BaseService
 
     def __init__(
         self,
