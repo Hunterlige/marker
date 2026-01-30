@@ -17,7 +17,7 @@ include = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Pillow = "^10.1.0"
+Pillow = "*"
 pydantic = "^2.4.2"
 pydantic-settings = "^2.0.3"
 transformers = "^4.45.2"
@@ -26,16 +26,13 @@ torch = "^2.7.0"
 tqdm = "^4.66.1"
 ftfy = "^6.1.1"
 rapidfuzz = "^3.8.1"
-surya-ocr = "^0.14.6"
+surya-ocr  = { git = "https://github.com/Hunterlige/surya.git", tag = "v0.14.6" }
 regex = "^2024.4.28"
 pdftext = "~0.6.3"
 markdownify = "^1.1.0"
 click = "^8.2.0"
 markdown2 = "^2.5.2"
 filetype = "^1.2.0"
-google-genai = "^1.0.0"
-anthropic = "^0.46.0"
-pre-commit = "^4.2.0"
 scikit-learn = "^1.6.1"
 
 # Optional dependencies for documents
@@ -44,7 +41,7 @@ openpyxl = {version = "^3.1.5", optional = true}
 python-pptx = {version = "^1.0.2", optional = true}
 ebooklib = {version = "^0.18", optional = true}
 weasyprint = {version = "^63.1", optional = true}
-openai = "^1.65.2"
+openai = {version = "^1.65.2", optional = true}
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
