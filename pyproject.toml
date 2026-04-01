@@ -27,7 +27,7 @@ tqdm = "^4.66.1"
 ftfy = "^6.1.1"
 rapidfuzz = "^3.8.1"
 surya-ocr  = { git = "https://github.com/Hunterlige/surya.git", tag = "v0.14.6" }
-regex = "^2024.4.28"
+regex = "*"
 pdftext = "~0.6.3"
 markdownify = "^1.1.0"
 click = "^8.2.0"
