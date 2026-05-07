@@ -26,11 +26,11 @@ torch = "^2.7.0"
 tqdm = "^4.66.1"
 ftfy = "^6.1.1"
 rapidfuzz = "^3.8.1"
-surya-ocr  = { git = "https://github.com/Hunterlige/surya.git", tag = "v0.14.6" }
+surya-ocr  = { git = "https://github.com/Hunterlige/surya.git", tag = "v0.14.6.post1" }
 regex = "*"
 pdftext = "~0.6.3"
 markdownify = "^1.1.0"
-click = "^8.2.0"
+click = "^8.1.8"
 markdown2 = "^2.5.2"
 filetype = "^1.2.0"
 scikit-learn = "^1.6.1"
@@ -61,14 +61,6 @@ playwright = "^1.49.1"
 
 [tool.poetry.extras]
 full = ["mammoth", "openpyxl", "python-pptx", "ebooklib", "weasyprint"]
-
-[tool.poetry.scripts]
-marker = "marker.scripts.convert:convert_cli"
-marker_single = "marker.scripts.convert_single:convert_single_cli"
-marker_chunk_convert = "marker.scripts.chunk_convert:chunk_convert_cli"
-marker_gui = "marker.scripts.run_streamlit_app:streamlit_app_cli"
-marker_extract = "marker.scripts.run_streamlit_app:extraction_app_cli"
-marker_server = "marker.scripts.server:server_cli"
 
 [build-system]
 requires = ["poetry-core"]

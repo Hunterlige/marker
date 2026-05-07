@@ -5965,4 +5965,4 @@ full = ["ebooklib", "mammoth", "openpyxl", "python-pptx", "weasyprint"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "5d83c10f06aa7a303f51da7e9f5fe727127c214bb09fd93408e8663debfeb692"
+content-hash = "428156ea43314ad23751442a86dde902080ed1ec89954c0ababa391326957c0e"
